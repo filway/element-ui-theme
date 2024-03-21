@@ -1,6 +1,8 @@
 import { createApp } from 'vue'
 import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+// import 'element-plus/dist/index.css'
+import './styles/element/index.scss'
+
 import 'element-plus/theme-chalk/dark/css-vars.css'
 import './style.css'
 import 'virtual:uno.css'

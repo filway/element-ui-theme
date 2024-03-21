@@ -1,0 +1,32 @@
+// styles/element/index.scss
+/* 只需要重写你需要的即可 */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #0e5a69,
+    ),
+    'info': (
+      'base': #889da2,
+    ),
+    'warning': (
+      'base': #fc9028,
+    ),
+    'danger': (
+      'base': #ff3f3f,
+    ),
+  ),
+  $bg-color: (
+    '': #0c3e4c,
+  ),
+  $text-color: (
+    'primary': rgba(255, 255, 255),
+    'regular': rgba(255, 255, 255, 0.8),
+    'secondary': rgba(255, 255, 255, 0.5),
+    'placeholder': rgba(255, 255, 255, 0.5),
+    'disabled': rgba(255, 255, 255, 0.3),
+  )
+);
+
+// 如果只是按需导入，则可以忽略以下内容。
+// 如果你想导入所有样式:
+@use 'element-plus/theme-chalk/src/index.scss' as *;
